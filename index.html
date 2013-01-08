@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>颜海镜连连看3.0beta版</title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" language="javascript" src="Scripts/CanvasPanel.js"></script>
+<script type="text/javascript" language="javascript" src="Scripts/loadXml.js"></script>
+<script type="text/javascript">
+	function init(){
+		loadPhotos();
+		initCanvasPanel();
+	}
+	window.onload=init;
+</script>
+</head>
+
+<body>
+	<bgsound id='sound' src="" loop="1" />
+    <audio id="audio" src="" autoplay="true" >
+    </audio>
+	<div id="linkCanvasPanelHead">
+    </div>
+	<div id="linkCanvasPanel">
+    	<div id="start">
+        	<center>颜海镜连连看<img src="images/1161084920243.gif" style="vertical-align:middle" /></center>
+            <span class='model'>一般模式</span>
+            <span class='model'>挑战模式</span>
+            <span class='model'>休闲模式</span>
+            <span class='model'>无敌模式</span>
+            <div id="information">
+            	copyright &copy; 颜海镜团队  All Rights Reserved <br />
+					<a href="http://t.qq.com/yanhaijing1234" target="_blank">颜海镜的微博</a>
+            </div>
+        </div>
+        <div id="level">
+        	<div id="gameOver">
+            	<input type="image" src="images/20080602162113476.png" />
+            </div>
+        	<div id="normal">
+            	<span class="currentModel">一般模式</span>
+            	<span class="level">level&nbsp;&nbsp;&nbsp;&nbsp;第 1 关</span>
+                <span class="scores">score&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+            </div>
+            <div id="challenge">
+            	<span class="currentModel">挑战模式</span>
+            	<span class="level">level&nbsp;&nbsp;&nbsp;&nbsp;第 1 关</span>
+                <span class="scores">score&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+            </div>
+            <div id="relaxation">
+            	<span class="currentModel">休闲模式</span>
+            	<span class="level">level&nbsp;&nbsp;&nbsp;&nbsp;第 1 关</span>
+                <span class="scores">score&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+            </div>
+            <div id="nothing">
+            	<span class="currentModel">无敌模式</span>
+            	<span class="level">level&nbsp;&nbsp;&nbsp;&nbsp;第 1 关</span>
+                <span class="scores">score&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+            </div>
+        </div>
+    </div><!--end of linkPanel -->
+    <div id="linkMarkPanel">
+    	<input type="button" value="洗牌" />
+        <input type="button" value="Home" />
+        <span id="currentLevel">第<b>1</b>关</span>
+        <span id="currentScores">当前分数：<b>0</b></span>
+        <span id="linker">消除<b>0</b>对</span>
+        <span id="noLinker">剩余<b>64</b>对</span>
+        <span id="times">本局已用<b>0</b>S</span>
+        <div id="process">
+        	<span id="processLink"><span></span></span><span id="time"><b>30</b>S</span>
+        </div>
+    </div><!--end of linMarkPanel -->
+</body>
+</html>

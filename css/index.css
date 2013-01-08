@@ -1,0 +1,131 @@
+/* CSS Document */
+body{
+	background:url(../images/200822394356312_2.jpg);
+}
+#linkCanvasPanel,#start,#level,#gameOver,#normal,#challenge,#relaxation,#nothing{
+	overflow:hidden;
+	position:relative;
+	background:#CCC;
+	margin:auto;
+	width:720px;
+	height:500px;
+}
+#level{
+	height:auto;
+}
+#start{
+	padding:0px;
+	background:url(../images/200911221847128120.jpg);
+}
+#gameOver{
+	display:none;
+	background:#0099CC url(../images/GameOver.gif) center 25% no-repeat;
+	text-align:center;
+}
+#gameOver input{
+	margin-top:300px;
+}
+#normal,#challenge,#relaxation,#nothing{
+	background:url(../images/419850.jpg);
+}
+.level,.currentModel,.scores{
+	text-align:left;
+	margin:50px auto auto 200px;
+	display:block;
+	color:#FFCC33;
+	font-size:24px;
+	font-weight:900;
+	font-style:italic;
+}
+.currentModel{
+	margin:50px;
+	text-align:center;
+	color:#999;
+	font-style:normal;
+	font-size:36px;
+}
+#start center{
+	margin:20px;
+	color:#FFFFFF;
+	font-size:24px;
+}
+.model{
+	color:#FFF;
+	font-weight:bolder;
+	cursor:pointer;
+	height:30px;
+	width:100px;
+	padding:10px 0px 0px 20px;
+	border:#CCCCCC solid 2px;
+	margin:30px 100px 10px;
+	display:block;
+}
+.model:hover{
+	color:#0FF;
+	border:#C30 solid 5px;
+}
+#information{
+	color:#CCC;
+	width:300px;
+	font-size:14px;
+	text-align:center;
+	margin:50px 50px 0px auto;
+}
+#information a{
+	text-decoration:none;
+	color:#CCCCCC;
+}
+#linkCanvasPanel table{
+	border-collapse:collapse;
+}
+#linkCanvasPanel table tr td{
+	padding:0px;
+	border:#999999 solid 0px;
+	margin:0px;
+	width:40px;
+	height:49px;
+}
+#linkMarkPanel{
+	display:none;
+	margin:10px auto;
+	width:720px;
+	height:50px;
+}
+#linkMarkPanel input{
+	cursor:pointer;
+	color:#FFF;
+	font-size:14px;
+}
+#currentLevel,#currentScores,#linker,#noLinker,#times{
+	font-weight:bold;
+	margin:auto 5px;
+	color:#30F;
+}
+#currentLevel b,#currentScores b,#linker b,#noLinker b,#times b,#time b{
+	margin:auto 5px;
+	color:#FF0000;
+	font-style:oblique;
+}
+#process{
+	padding:5px;
+}
+#processLink{
+	margin-right:10px;
+	float:left;
+	height:20px;
+	width:600px;
+	border:#CCCCCC solid 1px;
+}
+#processLink span{
+	background:#FFFF00;
+	display:block;
+	width:600px;
+	height:100%;
+}
+#time{
+	color:#FFFFFF;
+}
+.select{
+	filter:gray;
+	border:#000000 solid 2px;
+}

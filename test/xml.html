@@ -1,0 +1,50 @@
+<body onload="initLibrary()">
+The file name passed into the importXML function can of course be changed to any local or remote XML file name, depending on which one you want to load.
+<script>
+    var xmlDoc;
+    var xmlloaded = false;
+
+    function initLibrary()
+    {
+        importXML("http:///www.somedomain.com/somesubdir/somefile.xml");
+    }
+
+    function importXML(xmlfile)
+    {
+        try
+        {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", xmlfile, false);
+        }
+        catch (Exception)
+        {
+            var ie = (typeof window.ActiveXObject != 'undefined');
+
+            if (ie)
+            {
+                xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                xmlDoc.async = false;
+                while(xmlDoc.readyState != 4) {};
+                xmlDoc.load(xmlfile);
+                readXML();
+                xmlloaded = true;
+            }
+            else
+            {
+                xmlDoc = document.implementation.createDocument("", "", null);
+                xmlDoc.onload = readXML;
+                xmlDoc.load(xmlfile);
+                xmlloaded = true;
+            }
+        }
+
+        if (!xmlloaded)
+        {
+            xmlhttp.setRequestHeader('Content-Type', 'text/xml')
+            xmlhttp.send("");
+            xmlDoc = xmlhttp.responseXML;
+            readXML();
+            xmlloaded = true;
+        }
+    }
+</script>
