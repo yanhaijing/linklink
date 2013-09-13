@@ -3,8 +3,4 @@
 *.pyo
 .svn
 _svn
-*.class
-*.pyc
-*.pyo
-.svn
-_svn
+.project
