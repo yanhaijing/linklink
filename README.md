@@ -1,7 +1,7 @@
 <a href="http://yanhaijing.github.com/linklink">
   <img src="./images/link.gif" width="100px">
 </a>
-#[Linklink](http://yanhaijing.github.com/linklink)
+#[Linklink](http://yanhaijing.github.com/linklink) [![license](http://img.shields.io/npm/l/express.svg)](https://github.com/yanhaijing/linklink/blob/master/MIT-LICENSE.txt)
 
 Linklink is a simple game on web that is like the game LinkGame
 
