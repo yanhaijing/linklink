@@ -1,11 +1,11 @@
 <a href="http://yanhaijing.github.com/linklink">
   <img src="./images/link.gif" width="100px">
 </a>
-#[Linklink](http://yanhaijing.github.com/linklink) [![license](http://img.shields.io/npm/l/express.svg)](https://github.com/yanhaijing/linklink/blob/master/MIT-LICENSE.txt)
+# [Linklink](http://yanhaijing.github.com/linklink) [![license](http://img.shields.io/npm/l/express.svg)](https://github.com/yanhaijing/linklink/blob/master/MIT-LICENSE.txt)
 
 Linklink is a simple game on web that is like the game LinkGame
 
-##Platform
+## Platform
 
 * firefox
 * chrome
@@ -13,22 +13,22 @@ Linklink is a simple game on web that is like the game LinkGame
 * safira
 * ie8+ 
 
-##Demo
+## Demo
 
 [http://yanhaijing.github.com/linklink](http://yanhaijing.github.com/linklink)
 
-##Issues
+## Issues
 
 [Report a Problem](https://github.com/yanhaijing/linklink/issues)
 
-##Authors
+## Authors
 
 **yanhaijing**
 
 - [Twitter](http://t.qq.com/yanhaijing1234 "yanhaijing's Twitter")
 - [Email](http://yanhaijing1234@gmail.com "yanhaijing's Email")
 
-##Copyright and license
+## Copyright and license
 
 Copyright © 2013 yanhaijing. All Rights Reserved
 
